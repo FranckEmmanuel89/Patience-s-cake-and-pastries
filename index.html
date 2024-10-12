@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patience's cake and pastries</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @font-face {
+        font-family: myFont;
+        src: url(font/Gistesy.ttf);
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              krona: ["Krona One", "sans-serif"],
+              myFont: ["myFont", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+
+
+
+    
+    <header class="pb-[70px]">
+        <!------------------------NAVBAR----------------------------->
+        <nav
+          class="flex justify-between h-[70px] bg-orange-100 text-black items-center fixed pr-3 md:pr-10 w-full z-20"
+        >
+          <div class="md:hidden ml-3">
+            <button
+              id="menu-button"
+              class="text-gray-700 focus:outline-none z-30 relative transition-transform"
+            >
+              <!-- Icon per Hamburger Menu -->
+              <svg
+                id="hamburger-icon"
+                class="w-6 h-6 inline-block absolute -top-5 content-center rotate-180"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
+              </svg>
+              <!-- Icon per Close Menu -->
+              <svg
+                id="close-icon"
+                class="w-6 h-6 hidden absolute -top-5 hover:text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+          </div>
+  
+          <div
+            id="mobile-menu"
+            class="text-white fixed top-0 left-0 min-w-72 h-full bg-slate-900 shadow-lg transform transition-transform duration-[0.4s] ease-out -translate-x-full z-10"
+          >
+            <ul class="flex flex-col space-y-6 mt-16">
+              <li
+                class="cursor-pointer hover:text-white px-10 py-4 hover:bg-slate-800"
+              >
+                <a class="font-krona text-[10px]" href="#home">HOME</a>
+              </li>
+              <li
+                class="cursor-pointer hover:text-white px-10 py-4 hover:bg-slate-800"
+              >
+                <a class="font-krona text-[10px]" href="#about">ABOUT</a>
+              </li>
+              <li
+                class="cursor-pointer hover:text-white px-10 py-4 hover:bg-slate-800"
+              >
+                <a class="font-krona text-[10px]" href="#activities"
+                  >OUR PRODUCTS</a
+                >
+              </li>
+              <li
+                class="cursor-pointer hover:text-white px-10 py-4 hover:bg-slate-800"
+              >
+                <a class="font-krona text-[10px]" href="#contact">CONTACT</a>
+              </li>
+              <li
+                class="cursor-pointer hover:text-white px-10 py-4 hover:bg-slate-800"
+              >
+                <a class="font-krona text-[10px]" href="#testimonials"
+                  >TESTIMONIALS</a
+                >
+              </li>
+            </ul>
+          </div>
+  
+          <div
+            class="container relative mx-auto flex justify-between items-center"
+          >
+            <div class="">
+              <img
+                class="size-28 md:size-36 ml-4 md:ml-0"
+                src="images/file (2).png"
+                alt="logo"
+              />
+            </div>
+            <div class="hidden md:flex space-x-10">
+              <ul class="flex space-x-12">
+                <li
+                  class="cursor-pointer hover:text-orange-800 transition-transform ease-out duration-[0.5s] hover:scale-[1.1]"
+                >
+                  <a class="font-krona text-[10px]" href="#home">HOME</a>
+                </li>
+                <li
+                  class="cursor-pointer hover:text-orange-800 transition-transform ease-out duration-[0.5s] hover:scale-[1.1]"
+                >
+                  <a class="font-krona text-[10px]" href="#about">PRODOTTI</a>
+                </li>
+                <li
+                  class="cursor-pointer hover:text-orange-800 transition-transform ease-out duration-[0.5s] hover:scale-[1.1]"
+                >
+                  <a class="font-krona text-[10px]" href="#activities"
+                    >CHI SONO</a
+                  >
+                </li>
+                <li
+                  class="cursor-pointer hover:text-orange-800 transition-transform ease-out duration-[0.5s] hover:scale-[1.1]"
+                >
+                  <a class="font-krona text-[10px]" href="#contact">CONTATTI</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+  
+      <!------------------------HERO SECTION----------------------------->
+  <!--
+      <div id="toTopButton" class="hidden">
+        <button
+          class="bg-slate-950 size-12 rounded-full fixed z-50 bottom-12 hover:opacity-80 right-4"
+          title="Top of the Page"
+        >
+          <img
+            class="size-7 m-auto"
+            src="images/icons8-flèche-vers-le-haut-100.png"
+            alt="immagine per andare in alto"
+          />
+        </button>
+      </div> -->
+  
+      <section
+        id="home"
+        class="h-[calc(100vh-70px)] flex bg-[url(images/1080452.jpg)] items-center justify-center bg-no-repeat bg-cover mb-20"
+      >
+        <div class="font-semibold text-center">
+          <h1
+            class="text-[60px] mb-5 font-light font-[myFont] text-[#dad3d3] md:text-[120px]"
+          >
+            Patience's cake and pastries
+          </h1>
+          <h5 class="text-white tracking-[12px] text-[15px]">
+            P.C.P
+          </h5>
+        </div>
+      </section>
+    </header>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>;
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="script.js"></script> 
+</body>
+</html>
