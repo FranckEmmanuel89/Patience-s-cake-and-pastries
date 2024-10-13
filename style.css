@@ -1,0 +1,17 @@
+/*- .hero {
+  animation-name: animation-hero;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  transition: 0.15s;
+}
+
+@keyframes animation-hero {
+    0% {
+      background-image: url(Images/1080452.jpg);
+    }
+    50% {
+      background-image: url(Images/2148485443.jpg);
+    }
+  }  -*/
+
+  

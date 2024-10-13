@@ -38,7 +38,7 @@
     <header class="pb-[70px]">
         <!------------------------NAVBAR----------------------------->
         <nav
-          class="flex justify-between h-[70px] bg-orange-100 text-black items-center fixed pr-3 md:pr-10 w-full z-20"
+          class="flex justify-between h-[70px] bg-orange-100 text-black items-center fixed px-28 md:pr-10 w-full z-20"
         >
           <div class="md:hidden ml-3">
             <button
@@ -122,12 +122,12 @@
           >
             <div class="">
               <img
-                class="size-28 md:size-36 ml-4 md:ml-0"
-                src="images/file (2).png"
+                class="size-28 md:size-16 ml-4 md:ml-0 rounded-full cursor-pointer border-2 border-orange-200"
+                src="images/logo.png"
                 alt="logo"
               />
             </div>
-            <div class="hidden md:flex space-x-10">
+            <div class="hidden md:flex space-x-10 pr-20">
               <ul class="flex space-x-12">
                 <li
                   class="cursor-pointer hover:text-orange-800 transition-transform ease-out duration-[0.5s] hover:scale-[1.1]"
@@ -174,7 +174,7 @@
   
       <section
         id="home"
-        class="h-[calc(100vh-70px)] flex bg-[url(images/1080452.jpg)] items-center justify-center bg-no-repeat bg-cover mb-20"
+        class="h-[calc(100vh-70px)] flex bg-[url(images/1080452.jpg)] items-center justify-center bg-no-repeat bg-cover hero"
       >
         <div class="font-semibold text-center">
           <h1
@@ -182,12 +182,20 @@
           >
             Patience's cake and pastries
           </h1>
-          <h5 class="text-white tracking-[12px] text-[15px]">
+        <!-- <h5 class="text-white tracking-[12px] text-[15px]">
             P.C.P
-          </h5>
+          </h5> --> 
         </div>
       </section>
     </header>
+    <main>
+        <section class="bg-white h-[500px]">
+
+        </section>
+        <section class="bg-gradient-to-b from-white to-orange-300 h-[700px] flex justify-center">
+            <h2 class="text-black text-center pt-36">I NOSTRI PRODOTTI</h2>
+        </section>
+    </main>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>;
     <script>
         AOS.init();
