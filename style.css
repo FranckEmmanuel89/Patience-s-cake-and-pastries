@@ -69,10 +69,9 @@
   
 
   .slide {
-    height: 200px;
-    width: 250px;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 17px;
     object-fit: cover;
     object-position: center;
