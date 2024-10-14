@@ -1,4 +1,6 @@
 
+//------------------- MENU HAMBURGER LOGIC-------------------------
+
 const menuButton = document.getElementById("menu-button");
 const mobileMenu = document.getElementById("mobile-menu");
 const hamburgerIcon = document.getElementById("hamburger-icon");
@@ -46,3 +48,77 @@ document.addEventListener("click", (event) => {
     }
   }
 });
+
+//-------------------------ANIMATION H5-------------------------
+
+const title = document.querySelector("h5");
+const letters = [... document.querySelectorAll('h5 span')]
+
+title.addEventListener("mouseenter", handleLetters);
+title.addEventListener("mouseleave", handleLetters);
+
+let IsAnimatingIn = false;
+let calledOUt = false;
+let animOpened = false;
+
+function handleLetters() {
+  if (animOpened) {
+   AnimOut();
+   animOpened = false;
+   return; 
+  }
+  if (IsAnimatingIn) {
+    calledOUt = true;
+    return;
+  }
+
+  IsAnimatingIn = true;
+  const animPromise = new Promise((resolve) => {
+    AnimIn()
+    setTimeout(() => {
+      resolve()
+    }, 750)
+  })
+  animPromise.then(() => {
+    IsAnimatingIn = false;
+    if (calledOUt) {
+      AnimOut()
+      calledOUt = false;
+    } else if (!calledOUt) {
+      animOpened = true;
+    }
+   
+  })
+}
+
+function AnimIn() {
+  anime({
+    targets: "h5 span",
+    translateX: function() {
+     return anime.random(-100,100) 
+    },
+    translateY: function() {
+      return anime.random(-100,100) 
+    },
+    translateZ: function() {
+      return anime.random(-2000,750) 
+    },
+    rotate: function () {
+      return anime.random(-250,250) 
+    },
+    easing: "easeOutCirc",
+    durattion: 750
+  })
+}
+
+function AnimOut() {
+  anime({
+    targets: "h5 span",
+    translateX: 0,
+    translateY: 0,
+    translateZ: 0,
+    rotate: 0,
+    easing: "easeInQuad",
+    durattion: 750
+  })
+}
