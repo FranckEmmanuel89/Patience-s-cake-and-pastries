@@ -11,6 +11,9 @@
       rel="stylesheet"
     />
     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+      </style>
+    <style>
       @font-face {
         font-family: myFont;
         src: url(font/Gistesy.ttf);
@@ -23,6 +26,7 @@
             fontFamily: {
               krona: ["Krona One", "sans-serif"],
               myFont: ["myFont", "sans-serif"],
+              cillarynAngistia : ["cillaryn-angistia", "sans-serif"],
             },
           },
         },
@@ -31,176 +35,102 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
-
-
-
-    
-    <header class="pb-[70px]">
-        <!------------------------NAVBAR----------------------------->
-        <nav
-          class="flex justify-between h-[70px] bg-orange-100 text-black items-center fixed px-28 md:pr-10 w-full z-20"
-        >
-          <div class="md:hidden ml-3">
-            <button
-              id="menu-button"
-              class="text-gray-700 focus:outline-none z-30 relative transition-transform"
-            >
-              <!-- Icon per Hamburger Menu -->
-              <svg
-                id="hamburger-icon"
-                class="w-6 h-6 inline-block absolute -top-5 content-center rotate-180"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16m-7 6h7"
-                ></path>
-              </svg>
-              <!-- Icon per Close Menu -->
-              <svg
-                id="close-icon"
-                class="w-6 h-6 hidden absolute -top-5 hover:text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M6 18L18 6M6 6l12 12"
-                ></path>
-              </svg>
-            </button>
-          </div>
-  
-          <div
-            id="mobile-menu"
-            class="text-white fixed top-0 left-0 min-w-72 h-full bg-slate-900 shadow-lg transform transition-transform duration-[0.4s] ease-out -translate-x-full z-10"
-          >
-            <ul class="flex flex-col space-y-6 mt-16">
-              <li
-                class="cursor-pointer hover:text-white px-10 py-4 hover:bg-slate-800"
-              >
-                <a class="font-krona text-[10px]" href="#home">HOME</a>
-              </li>
-              <li
-                class="cursor-pointer hover:text-white px-10 py-4 hover:bg-slate-800"
-              >
-                <a class="font-krona text-[10px]" href="#about">ABOUT</a>
-              </li>
-              <li
-                class="cursor-pointer hover:text-white px-10 py-4 hover:bg-slate-800"
-              >
-                <a class="font-krona text-[10px]" href="#activities"
-                  >OUR PRODUCTS</a
-                >
-              </li>
-              <li
-                class="cursor-pointer hover:text-white px-10 py-4 hover:bg-slate-800"
-              >
-                <a class="font-krona text-[10px]" href="#contact">CONTACT</a>
-              </li>
-              <li
-                class="cursor-pointer hover:text-white px-10 py-4 hover:bg-slate-800"
-              >
-                <a class="font-krona text-[10px]" href="#testimonials"
-                  >TESTIMONIALS</a
-                >
-              </li>
-            </ul>
-          </div>
-  
-          <div
-            class="container relative mx-auto flex justify-between items-center"
-          >
-            <div class="">
-              <img
-                class="size-28 md:size-16 ml-4 md:ml-0 rounded-full cursor-pointer border-2 border-orange-200"
-                src="images/logo.png"
-                alt="logo"
-              />
-            </div>
-            <div class="hidden md:flex space-x-10 pr-20">
-              <ul class="flex space-x-12">
-                <li
-                  class="cursor-pointer hover:text-orange-800 transition-transform ease-out duration-[0.5s] hover:scale-[1.1]"
-                >
-                  <a class="font-krona text-[10px]" href="#home">HOME</a>
-                </li>
-                <li
-                  class="cursor-pointer hover:text-orange-800 transition-transform ease-out duration-[0.5s] hover:scale-[1.1]"
-                >
-                  <a class="font-krona text-[10px]" href="#about">PRODOTTI</a>
-                </li>
-                <li
-                  class="cursor-pointer hover:text-orange-800 transition-transform ease-out duration-[0.5s] hover:scale-[1.1]"
-                >
-                  <a class="font-krona text-[10px]" href="#activities"
-                    >CHI SONO</a
-                  >
-                </li>
-                <li
-                  class="cursor-pointer hover:text-orange-800 transition-transform ease-out duration-[0.5s] hover:scale-[1.1]"
-                >
-                  <a class="font-krona text-[10px]" href="#contact">CONTATTI</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </header>
-  
-      <!------------------------HERO SECTION----------------------------->
-  <!--
-      <div id="toTopButton" class="hidden">
-        <button
-          class="bg-slate-950 size-12 rounded-full fixed z-50 bottom-12 hover:opacity-80 right-4"
-          title="Top of the Page"
-        >
+  <header class="pb-[70px]">
+    <!------------------------NAVBAR----------------------------->
+    <nav class="flex justify-between h-[70px] bg-orange-100 text-black items-center fixed w-full z-20">      
+      <div class="relative w-full h-[70px] flex items-center justify-between md:justify-around">
+        <div class="flex ml-5 md:ml-0 items-center h-[70px]">
           <img
-            class="size-7 m-auto"
-            src="images/icons8-flèche-vers-le-haut-100.png"
-            alt="immagine per andare in alto"
+            class="size-14 md:size-16  rounded-full cursor-pointer  border-[1px] border-orange-200"
+            src="images/logo.png"
+            alt="logo"
           />
-        </button>
-      </div> -->
-  
-      <section
-        id="home"
-        class="h-[calc(100vh-70px)] flex bg-[url(images/1080452.jpg)] items-center justify-center bg-no-repeat bg-cover hero"
-      >
-        <div class="font-semibold text-center">
-          <h1
-            class="text-[60px] mb-5 font-light font-[myFont] text-[#dad3d3] md:text-[120px]"
-          >
-            Patience's cake and pastries
-          </h1>
-        <!-- <h5 class="text-white tracking-[12px] text-[15px]">
-            P.C.P
-          </h5> --> 
         </div>
-      </section>
-    </header>
-    <main>
-        <section class="bg-white h-[500px]">
+        <div class="hidden md:flex h-[70px] space-x-10 items-center">
+          <ul class="flex space-x-12">
+            <li class="cursor-pointer hover:text-orange-800 transition-transform ease-out duration-[0.5s] hover:scale-[1.1]">
+              <a class="font-krona text-[10px]" href="#home">HOME</a>
+            </li>
+            <li class="cursor-pointer hover:text-orange-800 transition-transform ease-out duration-[0.5s] hover:scale-[1.1]">
+              <a class="font-krona text-[10px]" href="#prodotti">PRODOTTI</a>
+            </li>
+            <li class="cursor-pointer hover:text-orange-800 transition-transform ease-out duration-[0.5s] hover:scale-[1.1]">
+              <a class="font-krona text-[10px]" href="#about">CHI SONO</a>
+            </li>
+            <li class="cursor-pointer hover:text-orange-800 transition-transform ease-out duration-[0.5s] hover:scale-[1.1]">
+              <a class="font-krona text-[10px]" href="#contatti">CONTATTI</a>
+            </li>
+          </ul>
+        </div>
+        <div class="md:hidden w-12">
+          <button
+            id="menu-button"
+            class="text-black focus:outline-none z-30 relative transition-transform"
+          >
+            <!-- Icon per Hamburger Menu -->
+            <svg
+              id="hamburger-icon"
+              class="w-6 h-6 inline-block absolute -top-5 content-center rotate-180"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+            <!-- Icon per Close Menu -->
+            <svg
+              id="close-icon"
+              class="w-6 h-6 hidden absolute -top-5 hover:text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div id="mobile-menu" class="text-white fixed top-0 right-0 min-w-72 h-full bg-orange-400 shadow-lg transform transition-transform duration-[0.4s] ease-out translate-x-full z-10">
+          <ul class="flex flex-col space-y-6 mt-16">
+            <li class="cursor-pointer hover:text-white px-10 py-4 hover:bg-slate-800">
+              <a class="font-krona text-[10px]" href="#home">HOME</a>
+            </li>
+            <li class="cursor-pointer hover:text-white px-10 py-4 hover:bg-slate-800">
+              <a class="font-krona text-[10px]" href="#prodotti">PRODOTTI</a>
+            </li>
+            <li class="cursor-pointer hover:text-white px-10 py-4 hover:bg-slate-800">
+              <a class="font-krona text-[10px]" href="#about">CHI SONO</a>
+            </li>
+            <li class="cursor-pointer hover:text-white px-10 py-4 hover:bg-slate-800">
+              <a class="font-krona text-[10px]" href="#contatti">CONTATTI</a>
+            </li>
+            <li class="cursor-pointer hover:text-white px-10 py-4 hover:bg-slate-800">
+              <a class="font-krona text-[10px]" href="#testimonials">TESTIMONIALS</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-        </section>
-        <section class="bg-gradient-to-b from-white to-orange-300 h-[700px] flex justify-center">
-            <h2 class="text-black text-center pt-36">I NOSTRI PRODOTTI</h2>
-        </section>
-    </main>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>;
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
-
     <script src="script.js"></script> 
 </body>
 </html>

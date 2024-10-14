@@ -14,4 +14,115 @@
     }
   }  -*/
 
+  .scrolling-text {
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .scrolling-text p {
+    display: inline-block;
+    animation: scroll1 20s linear infinite;
+  }
+  
+  @keyframes scroll1 {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .slider {
+    height: 270px;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+  }
+
+  .slide-track {
+    display: flex;
+    width: calc(250px * 18);
+    animation: scroll 40s linear infinite;
+  }
+
+  /*
+  .slide-track:hover {
+    animation-play-state: paused;
+  } 
+  */
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 9));
+    }
+  }
+  
+
+  .slide {
+    height: 200px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 17px;
+    object-fit: cover;
+    object-position: center;
+    perspective: 100px;
+  }
+
+  .slide:hover {
+    opacity: 0.9;
+  }
+
+  img {
+    width: 250px;
+    height: 200px;
+    transition: transform 1s;
+    cursor: pointer;
+  }
+
+  img:hover {
+    transform: translateZ(20px);
+  }
+  
+  .slider::before,
+  .slider::after {
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+  }
+
+  .slider::before {
+    left: 0;
+    top: 0;
+  }
+
+  .slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+
+  .slogan {
+    font-family: "Bad Script", cursive;
+  }
+
+  .logo-js-animation:hover {
+    filter: drop-shadow(0 0 2em #e6ac57aa);
+ }
+
+  
+
   
