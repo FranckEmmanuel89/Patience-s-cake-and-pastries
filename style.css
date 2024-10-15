@@ -114,7 +114,9 @@
     transform: rotateZ(180deg);
   }
 
-  .slogan {
+  .slogan,
+  .chef,
+  .citation {
     font-family: "Bad Script", cursive;
   }
 

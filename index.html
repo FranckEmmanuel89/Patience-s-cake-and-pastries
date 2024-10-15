@@ -37,7 +37,7 @@
 <body class="overflow-x-hidden">
   <header class="pb-[70px]">
     <!------------------------NAVBAR----------------------------->
-    <nav class="flex justify-between h-[70px] bg-orange-100 text-black items-center fixed w-full z-20">      
+    <nav class="flex justify-between h-[70px] bg-orange-100 text-black items-center fixed w-full z-50">      
       <div class="relative w-full h-[70px] flex items-center justify-between md:justify-around">
         <div class="flex ml-5 md:ml-0 items-center h-[70px]">
           <img class="size-14 md:size-16  rounded-full cursor-pointer  border-[1px] border-orange-200" src="images/logo.png" alt="logo"/>
@@ -70,7 +70,7 @@
             </svg>
           </button>
         </div>
-        <div id="mobile-menu" class="text-white fixed top-0 right-0 min-w-72 h-full bg-orange-400 shadow-lg transform transition-transform duration-[0.4s] ease-out translate-x-full z-10">
+        <div id="mobile-menu" class="text-white fixed top-0 right-0 min-w-72 h-full bg-orange-400 shadow-xl transform transition-transform duration-[0.4s] ease-out translate-x-full z-10">
           <ul class="flex flex-col space-y-6 mt-16">
             <li class="cursor-pointer hover:text-white px-10 py-4 hover:bg-slate-800">
               <a class="font-krona text-[10px]" href="#home">HOME</a>
@@ -213,93 +213,113 @@
       </div>
     </section>
 
-    <section class="bg-gradient-to-b from-white to-orange-200 pb-20 flex flex-col justify-center">
+    <section class="bg-gradient-to-b from-white to-orange-50 pb-20 flex flex-col justify-center relative">
       <h2 class="text-black text-center pt-28 mb-28 font-krona font-bold">I PRODOTTI</h2>
+      <img class="z-1 absolute top-60 left-36" src="images/deco1.png" alt="">
+      <img class="z-1 absolute top-[715px] right-36" src="images/deco2.png" alt="">
+      <img class="z-1 absolute bottom-40 left-36" src="images/deco3.png" alt="">
       <div class="flex flex-wrap gap-20 mx-14 justify-center">
-        <div class="w-80 h-96 bg-white shadow-md flex flex-col rounded-b-lg rounded-tl-[50px]">
-          <div class="h-64 flex justify-center items-center object-cover rounded-tl-[50px] bg-gradient-to-b from-orange-100 to-orange-white">
-            <img src="images/img1.png" alt="immagine torta">
+        <div class="w-80 z-30 h-96 bg-white shadow-xl flex flex-col rounded-b-lg overflow-hidden rounded-tl-[50px]">
+          <div class="h-72 flex justify-center cursor-pointer items-center object-cover rounded-tl-[50px] bg-gradient-to-b from-orange-100 to-orange-white overflow-hidden transform transition-transform duration-[0.8s] ease-in-out hover:scale-[1.1]">
+            <img class="" src="images/img1.png" alt="immagine torta">
           </div>
-          <div class="h-32 bg-orange-300 rounded-b-lg flex flex-col justify-center items-center">
-            <p class="mb-5 font-semibold">Torta Capricciosa</p>
-            <button class="text-white bg-red-950 px-4 py-2 rounded-sm">INFO & PREZZI</button>
+          <div class="h-24  bg-orange-300 rounded-b-lg flex flex-col justify-center items-center">
+            <p class="mb-2 font-semibold">Torta Capricciosa</p>
+            <button class="text-white bg-red-950 px-4 py-1 rounded-sm font-semibold hover:bg-orange-50 hover:text-black">INFO & PREZZI</button>
           </div>
         </div>
-        <div class="w-80 h-96 bg-white shadow-md flex flex-col rounded-b-lg rounded-tl-[50px]">
-          <div class="h-64 flex justify-center items-center object-cover rounded-tl-[50px] bg-gradient-to-b from-orange-100 to-orange-white">
+        <div class="w-80 z-30 h-96 bg-white shadow-xl flex flex-col rounded-b-lg overflow-hidden rounded-tl-[50px]">
+          <div class="h-72 flex justify-center cursor-pointer items-center object-cover rounded-tl-[50px] bg-gradient-to-b from-orange-100 to-orange-white overflow-hidden transform transition-transform duration-[0.8s] ease-in-out hover:scale-[1.1]">
             <img class="size-48" src="images/img2.png" alt="immagine torta">
           </div>
-          <div class="h-32 bg-orange-300 rounded-b-lg flex flex-col justify-center items-center">
-            <p class="mb-5 font-semibold">Tesorino Mio</p>
-            <button class="text-white bg-red-950 px-4 py-2 rounded-sm">INFO & PREZZI</button>
+          <div class="h-24 bg-orange-300 rounded-b-lg flex flex-col justify-center items-center">
+            <p class="mb-2 font-semibold">Tesorino Mio</p>
+            <button class="text-white bg-red-950 px-4 py-1 rounded-sm font-semibold hover:bg-orange-50 hover:text-black">INFO & PREZZI</button>
           </div>
         </div>
-        <div class="w-80 h-96 bg-white shadow-md flex flex-col rounded-b-lg rounded-tl-[50px]">
-          <div class="h-64 flex justify-center items-center object-cover rounded-tl-[50px] bg-gradient-to-b from-orange-100 to-orange-white">
+        <div class="w-80 z-30 h-96 bg-white shadow-xl flex flex-col rounded-b-lg overflow-hidden rounded-tl-[50px]">
+          <div class="h-72 flex justify-center cursor-pointer items-center object-cover rounded-tl-[50px] bg-gradient-to-b from-orange-100 to-orange-white overflow-hidden transform transition-transform duration-[0.8s] ease-in-out hover:scale-[1.1]">
+            <img class="size-48" src="images/img4.png" alt="immagine torta">
+          </div>
+          <div class="h-24 bg-orange-300 rounded-b-lg flex flex-col justify-center items-center">
+            <p class="mb-2 font-semibold">Torta J'adore</p>
+            <button class="text-white bg-red-950 px-4 py-1 rounded-sm font-semibold hover:bg-orange-50 hover:text-black">INFO & PREZZI</button>
+          </div>
+        </div>
+        <div class="w-80 z-30 h-96 bg-white shadow-xl flex flex-col rounded-b-lg overflow-hidden rounded-tl-[50px]">
+          <div class="h-72 flex justify-center cursor-pointer items-center object-cover rounded-tl-[50px] bg-gradient-to-b from-orange-100 to-orange-white overflow-hidden transform transition-transform duration-[0.8s] ease-in-out hover:scale-[1.1]">
+            <img class="size-52" src="images/img5.png" alt="immagine torta">
+          </div>
+          <div class="h-24 bg-orange-300 rounded-b-lg flex flex-col justify-center items-center">
+            <p class="mb-2 font-semibold">Torta Velour</p>
+            <button class="text-white bg-red-950 px-4 py-1 rounded-sm font-semibold hover:bg-orange-50 hover:text-black">INFO & PREZZI</button>
+          </div>
+        </div>
+        <div class="w-80 z-30 h-96 bg-white shadow-xl flex flex-col rounded-b-lg overflow-hidden rounded-tl-[50px]">
+          <div class="h-72 flex justify-center cursor-pointer items-center object-cover rounded-tl-[50px] bg-gradient-to-b from-orange-100 to-orange-white overflow-hidden transform transition-transform duration-[0.8s] ease-in-out hover:scale-[1.1]">
             <img src="images/img1.png" alt="immagine torta">
           </div>
-          <div class="h-32 bg-orange-300 rounded-b-lg flex flex-col justify-center items-center">
-            <p class="mb-5 font-semibold">Torta capricciosa</p>
-            <button class="text-white bg-red-950 px-4 py-2 rounded-sm">INFO & PREZZI</button>
+          <div class="h-24 bg-orange-300 rounded-b-lg flex flex-col justify-center items-center">
+            <p class="mb-2 font-semibold">Torta capricciosa</p>
+            <button class="text-white bg-red-950 px-4 py-1 rounded-sm font-semibold hover:bg-orange-50 hover:text-black">INFO & PREZZI</button>
           </div>
         </div>
-        <div class="w-80 h-96 bg-white shadow-md flex flex-col rounded-b-lg rounded-tl-[50px]">
-          <div class="h-64 flex justify-center items-center object-cover rounded-tl-[50px] bg-gradient-to-b from-orange-100 to-orange-white">
+        <div class="w-80 z-30 h-96 bg-white shadow-xl flex flex-col rounded-b-lg overflow-hidden rounded-tl-[50px]">
+          <div class="h-72 flex justify-center cursor-pointer items-center object-cover rounded-tl-[50px] bg-gradient-to-b from-orange-100 to-orange-white overflow-hidden transform transition-transform duration-[0.8s] ease-in-out hover:scale-[1.1]">
             <img src="images/img1.png" alt="immagine torta">
           </div>
-          <div class="h-32 bg-orange-300 rounded-b-lg flex flex-col justify-center items-center">
-            <p class="mb-5 font-semibold">Torta capricciosa</p>
-            <button class="text-white bg-red-950 px-4 py-2 rounded-sm">INFO & PREZZI</button>
+          <div class="h-24 bg-orange-300 rounded-b-lg flex flex-col justify-center items-center">
+            <p class="mb-2 font-semibold">Torta capricciosa</p>
+            <button class="text-white bg-red-950 px-4 py-1 rounded-sm font-semibold hover:bg-orange-50 hover:text-black">INFO & PREZZI</button>
           </div>
         </div>
-        <div class="w-80 h-96 bg-white shadow-md flex flex-col rounded-b-lg rounded-tl-[50px]">
-          <div class="h-64 flex justify-center items-center object-cover rounded-tl-[50px] bg-gradient-to-b from-orange-100 to-orange-white">
+        <div class="w-80 z-30 h-96 bg-white shadow-xl flex flex-col rounded-b-lg overflow-hidden rounded-tl-[50px]">
+          <div class="h-72 flex justify-center cursor-pointer items-center object-cover rounded-tl-[50px] bg-gradient-to-b from-orange-100 to-orange-white overflow-hidden transform transition-transform duration-[0.8s] ease-in-out hover:scale-[1.1]">
             <img src="images/img1.png" alt="immagine torta">
           </div>
-          <div class="h-32 bg-orange-300 rounded-b-lg flex flex-col justify-center items-center">
-            <p class="mb-5 font-semibold">Torta capricciosa</p>
-            <button class="text-white bg-red-950 px-4 py-2 rounded-sm">INFO & PREZZI</button>
+          <div class="h-24 bg-orange-300 rounded-b-lg flex flex-col justify-center items-center">
+            <p class="mb-2 font-semibold">Torta capricciosa</p>
+            <button class="text-white bg-red-950 px-4 py-1 rounded-sm font-semibold hover:bg-orange-50 hover:text-black">INFO & PREZZI</button>
           </div>
         </div>
-        <div class="w-80 h-96 bg-white shadow-md flex flex-col rounded-b-lg rounded-tl-[50px]">
-          <div class="h-64 flex justify-center items-center object-cover rounded-tl-[50px] bg-gradient-to-b from-orange-100 to-orange-white">
+        <div class="w-80 z-30 h-96 bg-white shadow-xl flex flex-col rounded-b-lg overflow-hidden rounded-tl-[50px]">
+          <div class="h-72 flex justify-center cursor-pointer items-center object-cover rounded-tl-[50px] bg-gradient-to-b from-orange-100 to-orange-white overflow-hidden transform transition-transform duration-[0.8s] ease-in-out hover:scale-[1.1]">
             <img src="images/img1.png" alt="immagine torta">
           </div>
-          <div class="h-32 bg-orange-300 rounded-b-lg flex flex-col justify-center items-center">
-            <p class="mb-5 font-semibold">Torta capricciosa</p>
-            <button class="text-white bg-red-950 px-4 py-2 rounded-sm">INFO & PREZZI</button>
+          <div class="h-24 bg-orange-300 rounded-b-lg flex flex-col justify-center items-center">
+            <p class="mb-2 font-semibold">Torta capricciosa</p>
+            <button class="text-white bg-red-950 px-4 py-1 rounded-sm font-semibold hover:bg-orange-50 hover:text-black">INFO & PREZZI</button>
           </div>
         </div>
-        <div class="w-80 h-96 bg-white shadow-md flex flex-col rounded-b-lg rounded-tl-[50px]">
-          <div class="h-64 flex justify-center items-center object-cover rounded-tl-[50px] bg-gradient-to-b from-orange-100 to-orange-white">
+        <div class="w-80 z-30 h-96 bg-white shadow-xl flex flex-col rounded-b-lg overflow-hidden rounded-tl-[50px]">
+          <div class="h-72 flex justify-center cursor-pointer items-center object-cover rounded-tl-[50px] bg-gradient-to-b from-orange-100 to-orange-white overflow-hidden transform transition-transform duration-[0.8s] ease-in-out hover:scale-[1.1]">
             <img src="images/img1.png" alt="immagine torta">
           </div>
-          <div class="h-32 bg-orange-300 rounded-b-lg flex flex-col justify-center items-center">
-            <p class="mb-5 font-semibold">Torta capricciosa</p>
-            <button class="text-white bg-red-950 px-4 py-2 rounded-sm">INFO & PREZZI</button>
+          <div class="h-24 bg-orange-300 rounded-b-lg flex flex-col justify-center items-center">
+            <p class="mb-2 font-semibold">Torta capricciosa</p>
+            <button class="text-white bg-red-950 px-4 py-1 rounded-sm font-semibold hover:bg-orange-50 hover:text-black">INFO & PREZZI</button>
           </div>
         </div>
-        <div class="w-80 h-96 bg-white shadow-md flex flex-col rounded-b-lg rounded-tl-[50px]">
-          <div class="h-64 flex justify-center items-center object-cover rounded-tl-[50px] bg-gradient-to-b from-orange-100 to-orange-white">
-            <img src="images/img1.png" alt="immagine torta">
-          </div>
-          <div class="h-32 bg-orange-300 rounded-b-lg flex flex-col justify-center items-center">
-            <p class="mb-5 font-semibold">Torta capricciosa</p>
-            <button class="text-white bg-red-950 px-4 py-2 rounded-sm">INFO & PREZZI</button>
-          </div>
-        </div>
-        <div class="w-80 h-96 bg-white shadow-md flex flex-col rounded-b-lg rounded-tl-[50px]">
-          <div class="h-64 flex justify-center items-center object-cover rounded-tl-[50px] bg-gradient-to-b from-orange-100 to-orange-white">
-            <img src="images/img1.png" alt="immagine torta">
-          </div>
-          <div class="h-32 bg-orange-300 rounded-b-lg flex flex-col justify-center items-center">
-            <p class="mb-5 font-semibold">Torta capricciosa</p>
-            <button class="text-white bg-red-950 px-4 py-2 rounded-sm">INFO & PREZZI</button>
-          </div>
-        </div>
-
-
       </div>
+    </section>
+
+    <section class="bg-white text-[18px] flex flex-col xl:flex-row gap-16 w-full bg-[url(images/para2.jpg)] h-[400px] md:h-[500px] bg-cover object-center bg-no-repeat bg-fixed justify-center items-center text-white md:text-[22px] lg:text-[26px]">
+      <div class="w-[50%] h-52 ml-10 flex flex-col justify-center items-center">
+        <p class="citation text-center mb-10">“ L’arte di preparare dolci è molto più che saper eseguire ricette alla perfezione: è un vero e proprio gesto d’amore. ” </p>
+        <p class="chef">Ernst Knam</p>
+      </div>
+
+      <div class="w-[50%] h-[400px]">
+        <video class="object-center object-cover" autoplay loop muted src="videos/video1.mp4"></video>
+      </div>
+    </section>
+    <section class="h-[700px] flex bg-gradient-to-b from-orange-200 to-white justify-center items-center">
+      <div class="border-2 border-red-800 w-[400px] flex justify-center items-center">
+        <img class="w-[400px]" src="images/passy.png" alt="">
+      </div>
+      <div class="border-2 border-green-700 h-[400px] w-[400px]">
+      </div>
+
     </section>
   </main>
 
